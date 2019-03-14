@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GIS学习网站</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        function selectTag(showContent,selfObj){
+        var showContents=document.getElementById('helpContent_left').getElementsByTagName('li');
+        for(var i=0;i<showContents.length;i++){
+          showContents[i].className="";
+        }
+        selfObj.parentNode.className="selectTag";
+        for(var i=0;i<4;i++){
+          j=document.getElementById('helpContent_right'+i)
+          j.style.display="none";
+        }
+        document.getElementById(showContent).style.display='block';
+        var tb=selfObj.innerHTML;
+        document.getElementById('place_now2').innerHTML=tb;
+      }      
+    </script>
+</head>
+<body>
+	<div id="layout">
+		<div id="head_include">
+			<div class="headLogin">
+				<div class="block_body">
+					<div class="image-top"><img src="image/1.png" ></div>
+                    <div class="wel"><p>GIS软件工程网络课程</p></div>
+					<div id="newLoginDiv">
+						<div id="login_hasUserClickLoginButton_newLogin" style="display: none"></div>
+						<form onsubmit="newLogin();return false;" id="newLoginFormRender" method="post">
+							<div class="login">
+								 <a href="index.html" class="bz">首页</a>
+								<a href="help.html" >帮助</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div id="helpContent">
+        <div class="helpContent_title">
+            <div class="helpContent_title_left">帮助中心</div>
+            <div class="helpContent_title_right">
+                <span>当前位置：</span>
+                <a href="index.html">首页</a>
+                <a href="help.html"><span class="nav_line">/&nbsp;</span>帮助<span class="nav_line">&nbsp;/</span></a>
+                <a id="place_now2">常见问题</a>
+            </div>
+        </div>
+        <div class="helpContent_left" >
+            <ul id="helpContent_left">
+                <li class="selectTag"><a href="JavaScript:void(0)" onclick="selectTag('helpContent_right0',this)">常见问题</a></li>
+                <li><a href="JavaScript:void(0)" onclick="selectTag('helpContent_right1',this)">人物介绍</a></li>
+                <li><a href="JavaScript:void(0)" onclick="selectTag('helpContent_right2',this)">关于我们</a></li>
+                <li><a href="JavaScript:void(0)" onclick="selectTag('helpContent_right3',this)">问题反馈</a></li>
+            </ul>
+        </div>
+        <div class="helpContent_right" id="helpContent_right">
+            <div id="helpContent_right0">
+                <h2>如何查找资源</h2>
+                <p><span>1:&nbsp;&nbsp;</span>在课程首页资源库中可以按照课程的类型进行查找</p>
+                <p><span>2:&nbsp;&nbsp;</span>在课程首页课程中心查询所需资源</p>
+                <h2>如何下载资源</h2>
+                <p><span>1:&nbsp;&nbsp;</span>点击您需要的资源，进入资源详细页，直接点击“下载”</p>
+                <p><span>2:&nbsp;&nbsp;</span>教学录像资源只可以在线浏览，不提供下载服务。</p>
+            </div>
+            <div id="helpContent_right1">
+                <h2>樊文有---个人简介</h2>
+                <p>博士，教授，就职于中国地质大学（武汉）信息工程学院，任教育部地理信息系统软件与应用工程研究中心党支部书记，长期从事地理信息系统基础理论研究和应用实践，是优秀国产GIS基础软件MAPGIS的主要研制者之一，作为主要骨干参与国家和省部级项目10多项。</p>
+                <h2>研究方向</h2>
+                <p>1、GIS在油田地面工程、房地产和公安警用领域的应用研究本注册和登录成员为网站资料上传者，一般学习者没有此权限操作。</p>
+                <p>2、GIS基础软件中数学基础、数据输入和预处理等方面的研究、开发和应用</p>
+                <p>3、数字测绘平台以及城镇地籍测绘建库一体化</p>
+            </div>
+            <div id="helpContent_right2">
+                <h2>关于我们</h2>
+                <p>本网站主要提供学生网络学习GIS软件工程，课程内容不是很全面，但是基本包含了老师上课所授知识，学生可通过google浏览器浏览本网站。</p>
+                <h2>团队介绍</h2>
+                <p>学院：&nbsp;信息工程学院 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;团队成员：xxx,xxx,xxxx等等</p>
+                <p>指导老师：樊文有</p>
+            </div>
+            <div id="helpContent_right3">
+               <h2>问题反馈</h2>
+                <p>本网站涉及操作问题或相关建议请联系xxx同学。</p>
+                <p>联系方式：&nbsp;&nbsp;12345678910</p>
+            </div>
+        </div>
+    </div>
+    <div id="footerContent">
+    	<div class="footer_include">
+    		<div class="footer">
+    			<span style="padding-right:30px; ">主办单位：中国地质大学信工学院</span>技术支持：信工学院307办公室<br>
+    			<span style="padding-right: 40px;">Copyright &copy; 2018</span>工信局备案：鄂xxxxxxxxxx
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>

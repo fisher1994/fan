@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GIS学习网站</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+    <script src="js/unslider.min.js"></script>
+</head>
+<body>
+	<div id="layout">
+		<div id="head_include">
+			<div class="headLogin">
+				<div class="block_body">
+                    <div class="image-top"><img src="image/1.png" ></div>
+					<div class="wel"><p>GIS软件工程网络课程</p></div>
+					<div id="newLoginDiv">
+						<div id="login_hasUserClickLoginButton_newLogin" style="display: none"></div>
+						<form onsubmit="newLogin();return false;" id="newLoginFormRender" method="post">
+							<div class="login">                              
+                                <a href="source/source.html" class="bz">教学课件</a>
+                                <a href="source/example.html" class="bz">例题习题</a>
+                                <a href="source/example.html" class="bz">试卷</a>
+                                <a href="index.html" class="bz">首页</a>
+								<a href="help.html" >帮助</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <div id="mianContent">
+        <div class="banner" id="b04">
+            <ul>
+                <li class="slider-item"><a href="https://baike.baidu.com/item/%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E6%96%B9%E6%B3%95/8159246" target="_Blank"><img src="image/002.png" width="1370" height="480" ><span class="slider-title"><em>GIS软件工程</em><br><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;遵循一般软件开发的工程化原理和方法，并按照GIS软件开发的特殊规律和要求，对GIS软件从（可行性研究、需求分析、总体设计、详细设计、软件编制、软件测试、软件维护）这几个阶段进行工程化规范的一门技术。</em></span></a></li>
+                <li class="slider-item"><a href="https://baike.baidu.com/item/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/25279" target="_Blank"><img src="image/001.png" width="1370" height="480" ><span class="slider-title"><em>软件工程是一门研究用工程化方法构建和维护有效的、实用的和高质量的软件的学科。它涉及程序设计语言、数据库、软件开发工具、系统平台、标准、设计模式等方面。</em></span></a></li>
+                <li class="slider-item"><a href="https://baike.baidu.com/item/%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF%E7%B3%BB%E7%BB%9F/171830?fr=aladdin" target="_Blank"><img src="image/003.png"  width="1370" height="480" ><span class="slider-title0"><em>地理信息系统（Geographic Information System或 Geo－Information system，GIS）有时又称为“地学信息系统”。它是一种特定的十分重要的空间信息系统。它是在计算机硬、软件系统支持下，对整个或部分地球表层（包括大气层）空间中的有关地理分布数据进行采集、储存、管理、运算、分析、显示和描述的技术系统。</em></span></a></li>
+            </ul>
+            <div class="progress"></div>
+            <a href="javascript:void(0);" class="unslider-arrow04 prev" ><img class="arrow" id="al" src="image/arrowl.png" alt="prev" width="20" height="35"></a>
+            <a href="javascript:void(0);" class="unslider-arrow04 next" ><img class="arrow" id="ar" src="image/arrowr.png" alt="next" width="20" height="37"></a>
+        </div>
+    </div>
+    <div id="Video">
+        <div class="container pic-box">
+            <div class="row">
+                <h1>课外超链接</h1>
+                <ul class="pic-box-1 clearfix">
+                    <li class="pic-box-i pull-left"><a href="http://lbsyun.baidu.com/index.php?title=jspopular" class="pic-box-content" target="_Blank"><div class="pic-box-content-img"><img src="image/baidu.png"></div><span></span><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;百度地图JavaScript API是一套由JavaScript语言编写的应用程序接口，支持PC端和移动端基于浏览器的地图应用开发。</p></a></li>
+                    <li class="pic-box-i pull-left"><a href="https://developers.arcgis.com/javascript/" class="pic-box-content" target="_Blank"><div class="pic-box-content-img"><img src="image/arcgis .png"></div><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ArcGIS API for JavaScript可以将ArcGIS Server提供的地图资源和其它资源(ArcGIS Online)嵌入到Web应用中。</p></a></li>
+                    <li class="pic-box-i pull-left"><a href="http://echarts.baidu.com/examples/" class="pic-box-content" target="_Blank"><div class="pic-box-content-img"><img src="image/echart.png"></div><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ECharts是一个纯Javascript图表库，提供直观，生动，可交互，可个性化定制的数据可视化图表。</p></a></li>
+                    <li class="pic-box-i pull-left"><a href="http://www.mapgis.com/" class="pic-box-content" target="_Blank"><div class="pic-box-content-img"><img src="image/mapgis.png"></div><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MapGIS是中国地质大学开发的通用工具型地理信息系统软件，可对空间数据进行采集、存储、检索、分析和图形表示。</p></a></li>
+                    <!-- <div class="blanks"></div> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="resourceBox">
+    		<h2>资源库</h2>
+    		<ul >
+    			<li><a href="source/source.html"><i class="courseware"></i>教学课件<br><span class="cGray">17344</span></a></li>
+    			<li><a href="source/lessonplan.html"><i class="lessonplan"></i>电子教案<br><span class="cGray">304055</span></a></li>
+    			<li><a href="source/example.html"><i class="example"></i>例题习题<br><span class="cGray">1674</span></a></li>
+    			<li><a href="source/document.html"><i class="document"></i>文献资料<br><span class="cGray">13344</span></a></li>
+    			<li><a href="source/coursevideo.html"><i class="coursevideo"></i>教学录像<br><span class="cGray">132</span></a></li>
+    			<li><a href="source/casestudy.html"><i class="casestudy"></i>教学案例<br><span class="cGray">22344</span></a></li>
+    			<li><a href="source/testpaper.html"><i class="testpaper"></i>试卷<br><span class="cGray">18844</span></a></li>
+    			<div class="blanks"></div>
+    		</ul>
+    </div>
+    <div id="footerContent">
+    	<div class="footer_include">
+    		<div class="footer">
+    			<span style="padding-right:30px; ">主办单位：中国地质大学信工学院</span>技术支持：信工学院307办公室<br>
+    			<span style="padding-right: 40px;">Copyright &copy; 2018</span>工信局备案：鄂xxxxxxxxxx
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>
